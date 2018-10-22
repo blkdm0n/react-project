@@ -8,7 +8,11 @@ class App extends React.Component {
   }
   render() {
     return React.createElement("div", {}, [
-      React.createElement("h1", { onClick: this.handleTitleClick }, "Adopt Me!"),
+      React.createElement(
+        "h1",
+        { onClick: this.handleTitleClick },
+        "Adopt Me!"
+      ),
       React.createElement(Pet, {
         name: "Marlowe",
         animal: "Dog",
@@ -27,4 +31,5 @@ class App extends React.Component {
     ]);
   }
 }
-ReactDOM.render(React.createElement(App), document.getElementById("root"));
+
+render(React.createElement(App), document.getElementById("root"));
